@@ -26,5 +26,3 @@ print('\n')
 print(obj[[1, 2]])
 # print(obj[obj<2])
 # print(obj[:'c'])
-
-# print(type(np.arange(3.)[1]))
