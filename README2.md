@@ -37,10 +37,10 @@ four   36
 ```
 
 >series['two'] = -52
-series['two':'three'] = [-52, 24]
-series[:'three'] = [23, -52, 24]
-**series[series>20] = [23, 24, 36]**
-**series[[1,2]] = [-52, 24]**
+>series['two':'three'] = [-52, 24]
+>series[:'three'] = [23, -52, 24]
+>**series[series>20] = [23, 24, 36]**
+>**series[[1,2]] = [-52, 24]**
 
 
 
