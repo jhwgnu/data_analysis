@@ -12,15 +12,16 @@ don't understand why this difference occurs**
 
 
 ## Series
-
+```python
 series1 = Series([23, -52, 24])
-=>
+>>>
 index values
 0     23
 1     -52
 2     24
 print(series1.index)
 print(series1.values)
+```
 
 setting index manually
 series2 = Series([23, -52, 24], index=['one', 'two', 'three'])

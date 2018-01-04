@@ -13,6 +13,7 @@ print('\n')
 # print(obj[[1, 2]])
 print(obj[2])
 print(obj[0:2])
+
 # print(type(obj[[1, 2]]))
 # print(obj[obj<2])
 # print(obj[:'c'])
