@@ -1,47 +1,140 @@
-# data_analysis
 
-Basic Modules
+
 ```python
-from pandas import Series, DataFrame
-```
-
-Series: very basic unit of one vector in data analysis
-created using a list or tuple or numpy.arange(4.) or other various types of array
-
->series from a list -> dtype: int64
-series from a tuple -> dtype: int32
-don't understand why this difference occurs
-
-## Series
-```python
-series1 = Series([23, -52, 24, 36])
->>>
-index values
-0     23
-1     -52
-2     24
-3     36
-
-print(series1.index)
-print(series1.values)
-```
-
-setting index manually
-```python
-series2 = Series([23, -52, 24, 36], index=['one', 'two', 'three', 'four'])
-=>
-one   23
-two   -52
-three 24
-four   36
-
-series2['two'] = -52
-series2['two':'three'] = [-52, 24]
-series2[:'three'] = [23, -52, 24]
-series2[series2 > 20] = [23, 24, 36]
-series2[[1,2]] = [-52, 24]
+from pandas import Series
+series1 = Series([23, 44, -19, 8])
+series1
 ```
 
 
 
-##DataFrame: bundle of multiple series(?)
+
+    0    23
+    1    44
+    2   -19
+    3     8
+    dtype: int64
+
+
+
+
+```python
+series1.index
+```
+
+
+
+
+    RangeIndex(start=0, stop=4, step=1)
+
+
+
+
+```python
+series1.values
+```
+
+
+
+
+    array([ 23,  44, -19,   8], dtype=int64)
+
+
+
+
+```python
+
+```
+
+
+```python
+series2 = Series([23, 44, -19, 8], index=['A', 'B', 'C', 'D'])
+series2
+```
+
+
+
+
+    A    23
+    B    44
+    C   -19
+    D     8
+    dtype: int64
+
+
+
+
+```python
+series2[2:3]
+
+```
+
+
+
+
+    C   -19
+    dtype: int64
+
+
+
+
+```python
+series2[[1,3]]
+```
+
+
+
+
+    B    44
+    D     8
+    dtype: int64
+
+
+
+
+```python
+series2[series2 < 20]
+```
+
+
+
+
+    C   -19
+    D     8
+    dtype: int64
+
+
+
+
+```python
+series2[:'B']
+```
+
+
+
+
+    A    23
+    B    44
+    dtype: int64
+
+
+
+
+```python
+series2['A':'C']
+```
+
+
+
+
+    A    23
+    B    44
+    C   -19
+    dtype: int64
+
+
+
+
+```python
+
+```
